@@ -1,0 +1,76 @@
+site_name: emsenn
+site_description: writer & developer
+site_author: 'emsenn'
+site_url: 'http://emsenn.samjones.media'
+
+repo_name: 'emsenn/personal'
+repo_url: 'https://github.com/emsenn/personal'
+
+copyright: 'I hope you like my website.'
+
+pages:
+    - home: index.md
+    - projects: projects.md
+    - writing:
+        - fiction:
+            - teraum:
+                - 'teraum: introduction': 'writing/fiction/teraum/index.md'
+        - poetry:
+            - psalms to the moon:
+                - 'psalms to the moon: introduction': 'writing/poetry/psalms-to-the-moon/index.md'
+            - grace:
+                - 'grace: introduction': 'writing/poetry/grace/index.md'
+                - 'anniversary': 'writing/poetry/grace/anniversary.md'
+                - '2055': 'writing/poetry/grace/2055.md'
+                - 'patter': 'writing/poetry/grace/patter.md'
+                - 'spring': 'writing/poetry/grace/spring.md'
+                - '2070': 'writing/poetry/grace/2070.md'
+                - 'death': 'writing/poetry/grace/death.md'
+                - 'stretch': 'writing/poetry/grace/stretch.md'
+                - 'perspective': 'writing/poetry/grace/perspective.md'
+    - dotfiles: 'dotfiles/index.md'
+    - scripts: 'scripts/index.md'
+    - reference:
+        - 'reference: introduction': 'reference/index.md'
+        - 'development': 'reference/development/index.md'
+    - blog:
+        - 'blog: introduction': 'blog/index.md'
+        - 2009:
+            - july:
+                - 'publicity isnt always good': 'blog/20090718-publicity.md'
+                - 'was neda christian?': 'blog/20090719-neda-christian.md'
+        - 2014:
+            - october:
+                - 'gun control stats suck': 'blog/20141029-gun-control.md'
+        - 2016:
+            - january:
+                - 'dont support unpaid internships': 'blog/20160121-internships.md'
+            - april:
+                - 'is it better to starve?': 'blog/20160425-scarcity.md'
+            - october:
+                - 'dont check in at standing rock': 'blog/20161031-standing-rock.md'
+        - 2017:
+           -  october:
+                - 'machine learning: the next semiconductor': 'blog/20171011-machine-learning-semiconductor.md'
+theme: 'material'
+
+
+extra:
+  feature:
+    tabs: true
+  palette:
+    primary: 'brown'
+    accent: 'amber'
+  font:
+    text: 'Cutive'
+    code: 'Cutive Mono'
+    
+    
+markdown_extensions:
+  - admonition
+  - codehilite:
+        guess_lang: false
+        linenums: true
+  - toc(permalink=true)
+  - markdown_include.include::
+        base_path: docs

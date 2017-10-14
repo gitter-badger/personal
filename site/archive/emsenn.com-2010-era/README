@@ -1,0 +1,5 @@
+This is the source of emsenn.com (Morgan Sennhauser's personal webpage.)  Why anyone would want it, is beyond me.
+
+The CSS is originally taken from kyrah.net, with permission.  Everything that isn't CSS, is WTFPL (http://emsenn.com/wtfpl.txt)
+
+**You'll have to move .style to style.css for this to work**
